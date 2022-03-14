@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_api_demo/api_service.dart';
+import 'package:post_api_demo/Service/api_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +33,8 @@ class MyHomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          ApiService.myApiService();
+          // ApiService.loginScreenApi();
+          ApiService.addCategoryUi();
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

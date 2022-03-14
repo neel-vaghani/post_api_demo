@@ -57,7 +57,7 @@ class Data {
   bool? xHasuraIsOwner;
   String? cacheControl;
 
-  factory Data.fromJson(Map<String, dynamic> json) => Data(
+  factory Data.fromJson(json) => Data(
         id: json["id"],
         employeeId: json["employee_id"],
         name: json["name"],
